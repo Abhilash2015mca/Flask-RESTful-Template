@@ -16,7 +16,6 @@ elif app.config["ENV"] == "development":
     app.config.from_object("config.DevelopmentConfig")
 
 
-#hello world api
 import resources.sample.helloworld as hw
 api.add_resource(hw.HelloWorld, '/')
 
